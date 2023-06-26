@@ -13,17 +13,23 @@
     overflow: hidden;
 }
 
-body {
-    font-family: 'Barlow', sans-serif;
+html {
     font-size: 16px;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
     line-height: 1.625;
     font-weight: 500;
+
     min-width: 320px;
+
+    background-color: colors.$white;
+    color: colors.$quite-black;
 }
 
 .container {
     max-width: 1920px;
     width: 1110px;
     margin: 0 auto;
-    padding: 0 8%;
 }
