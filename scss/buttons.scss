@@ -1,0 +1,30 @@
+@use "colors";
+
+.btn {
+    padding: 1rem 1.625rem;
+    border-radius: 0.5rem;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+
+    &--primary {
+        background-color: colors.$main;
+        color: colors.$white;
+
+        &:hover {
+            background-color: colors.$main-light;
+            color: colors.$white;
+        }
+    }
+
+    &--secondary {
+        background-color: colors.$light-gray;
+        color: colors.$quite-black;
+
+        &:hover {
+            background-color: colors.$quite-black;
+            color: colors.$white;
+        }
+    }
+}
