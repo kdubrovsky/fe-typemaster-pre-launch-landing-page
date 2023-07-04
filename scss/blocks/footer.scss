@@ -1,0 +1,13 @@
+@use "../colors";
+
+.footer {
+    &__copyright {
+        text-align: center;
+        color: colors.$dark-gray;
+        padding-bottom: 2.4375rem;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+}
