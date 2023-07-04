@@ -15,6 +15,7 @@
 
 html {
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
 
     background-color: colors.$white;
     color: colors.$quite-black;
+    overflow-x: hidden;
 }
 
 .container {
