@@ -1,0 +1,33 @@
+@use "../colors";
+
+.features {
+    margin-bottom: 8rem;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.875rem;
+    }
+
+    &__item-icon {
+        width: 4.0625rem;
+        height: 4.0625rem;
+        padding: 1rem;
+        border-radius: 16px;
+        background-color: colors.$main;
+        color: colors.$white;
+        margin-bottom: 3rem;
+    }
+
+    &__item-header {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        line-height: 1.167;
+        margin-bottom: 1.5rem;
+    }
+
+    &__item-description {
+        color: colors.$dark-gray;
+    }
+}
