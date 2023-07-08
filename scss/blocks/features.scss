@@ -3,10 +3,40 @@
 .features {
     margin-bottom: 8rem;
 
+    @media (max-width: 976px) {
+        margin-bottom: 8.875rem;
+    }
+
+    @media (max-width: 680px) {
+        margin-bottom: 6rem;
+    }
+
     &__list {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         gap: 1.875rem;
+
+        @media (max-width: 976px) {
+            column-gap: 0.625rem;
+            row-gap: 4.5rem;
+        }
+
+        @media (max-width: 680px) {
+            row-gap: 4rem;
+        }
+    }
+
+    &__item {
+        grid-column: span 3;
+
+        @media (max-width: 976px) {
+            grid-column: span 6;
+        }
+
+        @media (max-width: 680px) {
+            grid-column: span 12;
+            text-align: center;
+        }
     }
 
     &__item-icon {
@@ -17,6 +47,14 @@
         background-color: colors.$main;
         color: colors.$white;
         margin-bottom: 3rem;
+
+        @media (max-width: 976px) {
+            margin-bottom: 2.5rem;
+        }
+
+        @media (max-width: 680px) {
+            margin: 0 auto 3rem;
+        }
     }
 
     &__item-header {
@@ -29,5 +67,13 @@
 
     &__item-description {
         color: colors.$dark-gray;
+
+        @media (max-width: 976px) {
+            width: 83%;
+        }
+
+        @media (max-width: 680px) {
+            width: 100%;
+        }
     }
 }

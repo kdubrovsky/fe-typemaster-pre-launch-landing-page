@@ -6,6 +6,14 @@
         color: colors.$dark-gray;
         padding-bottom: 2.4375rem;
 
+        @media (max-width: 976px) {
+            padding-bottom: 2.6875rem;
+        }
+
+        @media (max-width: 680px) {
+            padding-bottom: 3.125rem;
+        }
+
         strong {
             font-weight: 700;
         }
